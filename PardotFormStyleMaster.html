@@ -3,32 +3,33 @@
 		<style>
             /*General*/
 			#pardot-form {
-				color: #666666;
-				font: 13px/120% Tahoma, Arial, Helvetica, Verdana, sans-serif;
-				margin: 0.5em 0 1em;
-				padding: 0.5em;
+				max-width: 700px!important;
+				line-height: 1.55;
+				font-weight: 300;
+				font-family: museo-sans,sans-serif;
+				background: #fff;
+				color: gray;
+				font-size: 1em;
+				margin: 0;
             }
             /* Form Errors */
 			#pardot-form span.error {
-				clear: left;
-				display: block;
-				font-weight: bold;
-				margin-top: 2px;
-				padding-left: 166px;
+				margin: 0 0 20px;
+				color: #cd0000;
             }
             /*Required Fields */
-			#pardot-form p.required,
+			/*#pardot-form p.required,
 			#pardot-form span.required,
 			#pardot-form label.required {
 				font-weight: bold;
 				background: url("/images/required.gif") no-repeat scroll right
 					top transparent;
-            }
+            }*/
             /*Field Descriptions */
-			#pardot-form p span.description {
+			/*#pardot-form p span.description {
 				display: block;
 				margin-left: 153px;
-            }
+            }*/
             /* Form Content Spacing */
 			#pardot-form p {
 				clear: left;
@@ -38,35 +39,93 @@
             }
             /* Submit Button */
 			#pardot-form p.submit {
-				margin: 1em 0.5em 0.2em 160px;
-				padding: 0;
+				background-position: 0 100%;
+				color: #fff;
+				padding: 13px 52px;
+				border-radius: 40px;
+				color: #e31522;
+				margin: 80px auto 0;
+				display: block;
+				font-size: 1.14286em;
+				letter-spacing: 2px;
+				box-shadow: none;
+				transition: all .25s ease;
+				background: linear-gradient(270deg,#fff 50%,#e31522 0);
+				background-size: 220% 100%;
+				border: 2px solid #e31522;
+				background-position: 100% 100%;
+				font-weight: 500;
             }
             /* Dropdown Fields */
 			#pardot-form select {
-				font-weight: normal;
+				width: 74%;
+				outline: none;
+				color: gray;
+				padding-left: 0;
+				margin: 0 0 0 25%;
+				background: hsla(0,0%,100%,0);
+				border: none;
+				font-size: 1.14286em;
+				font-weight: 100;
+				height: 50px;
+				padding: 0 10px;
+				line-height: 50px;
+				display: inline-table;
+				vertical-align: middle;
+				border-radius: 0;
             }
             /* Checkbox Fields */
-			#pardot-form input[type="checkbox"] {
+			/*#pardot-form input[type="checkbox"] {
 				margin-right: 30px;
 				height: 50px;
-            }
+            }*/
             /* Textarea Fields */
 			#pardot-form textarea.standard {
-				float: none;
-				height: 70px;
-				overflow: auto;
-				padding: 2px;
-				width: 200px;
+				width: 100%;
+				background: none;
+				padding: 35px 5px 5px;
+				border: none;
+				border-bottom: 1px solid #c8c8c8;
+				transition: all .3s ease;
+				height: 170px;
+				display: inline-table;
+				vertical-align: middle;
+				border-radius: 0;
+				resize: none;
             }
             /* Text Fields */
 			#pardot-form input {
-				font-weight: normal;
-				margin-right: 5px;
-				padding: 2px;
+				width: 100%;
+				padding-left: 25%;
+				background: hsla(0,0%,100%,0);
+				border: none;
+				color: gray;
+				font-size: 1.14286em;
+				font-weight: 100;
+				outline: none;
+				height: 50px;
+				padding: 0 10px;
+				line-height: 50px;
+				display: inline-table;
+				vertical-align: middle;
+				border-radius: 0;
             }
             /* Width of the Text field */
-			#pardot-form input.text {
+			/*#pardot-form input.text {
 				width: 200px;
+			}*/
+			/* Labels */
+			#pardot-form label {
+				width: 24%;
+				position: absolute;
+				left: 0;
+				top: 30%;
+				text-align: left;
+				font-size: 1.14286em;
+				font-weight: 100;
+				display: inline-table;
+				vertical-align: middle;
+				cursor: default;
 			}
 		</style>
 	</head>
